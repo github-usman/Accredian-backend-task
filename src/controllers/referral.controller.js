@@ -52,7 +52,10 @@ export const createReferralUser = async (req, res) => {
       data: req.body,
     });
 
-    res.status(201).json(newReferral);
+    res.status(201).json({
+      success: true,
+      newReferral,
+    });
 
   } catch (error) {
     console.error('Error creating referral:', error);
@@ -69,7 +72,10 @@ export const createReferralUser = async (req, res) => {
 export const getAllReferralUsers = async (req, res) => {
   try {
     const referrals = await prisma.referral.findMany();
-    res.status(200).json(referrals);
+    res.status(200).json({
+      success: true,
+      referrals,
+    });
   } catch (error) {
     console.error('Error fetching referrals:', error);
     res.status(500).json({ message: 'Internal server error' });
