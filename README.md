@@ -1,4 +1,4 @@
-HOSTED link : https://accredian-backend-task-4mkc.onrender.com/api/v1
+HOSTED link : https://accredian-backend-task-4mkc.onrender.com
 Frontend Link : https://accredian-frontend-task-good-ui.netlify.app/
 
 ## Application SetUp
