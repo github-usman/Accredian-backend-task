@@ -4,11 +4,9 @@ CREATE TABLE `Referral` (
     `referrerName` VARCHAR(100) NOT NULL,
     `referrerEmail` VARCHAR(191) NOT NULL,
     `referrerPhone` VARCHAR(15) NOT NULL,
-    `referrerLocation` VARCHAR(255) NOT NULL,
     `refereeName` VARCHAR(100) NOT NULL,
     `refereeEmail` VARCHAR(191) NOT NULL,
     `refereePhone` VARCHAR(15) NOT NULL,
-    `refereeLocation` VARCHAR(255) NOT NULL,
 
     UNIQUE INDEX `Referral_referrerEmail_key`(`referrerEmail`),
     UNIQUE INDEX `Referral_refereeEmail_key`(`refereeEmail`),
